@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coffee Shop</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<div class="header">
+			<img class="coffee-icon" src="https://www.clipartmax.com/png/middle/27-274106_steam-clipart-beverage-coffee-cup-icon-png.png" />
+			<h1 class="title">Coffee Shop</h1>
+		</div>
+
+		<div class="container">
+			<div class="items-name-payment-container">
+				<div class="section-1-items sections-design">
+					<h4>Items</h4>
+
+					<div class="item-1 item-design">
+						<p class="item-amount">1x</p>
+						<div>
+							<p class="item-name">Cappucino</p>
+							<p class="item-description">Light Foam</p>
+						</div>
+						<p class="item-cost">$6.00</p>
+					</div>
+					<div class="item-2 item-design">
+						<p class="item-amount">1x</p>
+						<div>
+							<p class="item-name">Late</p>
+							<p class="item-description">Almond Milk</p>
+						</div>
+						<p class="item-cost">$5.50</p>
+					</div>
+					<div class="item-3 item-design">
+						<p class="item-amount">1x</p>
+						<div>
+							<p class="item-name">Croissant</p>
+							<p class="item-description">Butter & Jam</p>
+						</div>
+						<p class="item-cost">$3.00</p>
+					</div>
+				</div>
+
+				<div class="name-payment-container">
+					<div class="section-2-name sections-design">
+						<h4>Name</h4>
+						<input type="text" class="input-design" id="name-for-order-userform" placeholder="Name For Order" />
+					</div>
+
+					<div class="section-3-payment sections-design">
+						<h4>Payment</h4>
+						<input type="text" class="input-design" id="card-number-userform" placeholder="Card Number" />
+						<input type="text" class="input-design" id="ccv-number" placeholder="CCV Number" />
+					</div>
+				</div>
+			</div>
+
+			<div class="section-4-total">
+				<div class="section-4-total-title total-section-design">
+					<div class="subtotal-name">Subtotal:</div>
+					<div class="tax-name">Tax:</div>
+					<div class="total-name">Total:</div>
+				</div>
+				<div class="section-4-prices total-section-design">
+					<div class="subtotal-price">$14.50</div>
+					<div class="tax-price">$1.45</div>
+					<div class="total-price">$15.95</div>
+				</div>
+			</div>
+
+			<button class="order-btn">Place order</button>
+		</div>
+	</body>
+</html>

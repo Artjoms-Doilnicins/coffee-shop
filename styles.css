@@ -1,0 +1,198 @@
+:root {
+	--color-primary-01: rgb(54, 35, 35);
+	--color-primary-02: rgba(248, 245, 243);
+	--bg-color-01: rgba(54, 35, 35, 0.9);
+	--bg-color-02: rgba(248, 245, 243, 0.85);
+	--bg-color-03: #14312aef;
+	--color-dark: #343a40;
+	--color-white: #ffffff;
+	--color-black: #000000;
+
+	--font-size-s: 12px;
+	--font-size-m: 14px;
+	--font-size-l: 18px;
+	--font-size-h1: 40px;
+	--font-size-h2: 32px;
+	--font-size-h3: 28px;
+	--font-size-h4: 24px;
+
+	--shadow-s: 0 1px 2px rgba(0, 0, 0, 0.1);
+	--shadow-m: 4px 4px 10px rgba(0, 0, 0, 0.3);
+	--shadow-l: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://static.vecteezy.com/system/resources/previews/035/796/337/non_2x/ai-generated-an-aesthetic-studio-coffee-shop-interior-featuring-a-coffee-cup-and-plant-free-photo.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: var(--bg-color-01);
+	top: 0;
+	box-shadow: var(--shadow-l);
+	border-radius: 0 0 30px 30px;
+}
+
+.title {
+	font-weight: 300;
+	color: var(--color-primary-02);
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+.coffee-icon {
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.items-name-payment-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+	width: 100%;
+}
+
+.name-payment-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-basis: 30%;
+}
+
+h4 {
+	font-size: var(--font-size-h4);
+	color: var(--color-primary-01);
+}
+
+.sections-design {
+	padding: 20px;
+	background-color: var(--bg-color-02);
+	border-radius: 10px;
+	box-shadow: var(--shadow-l);
+	min-width: 300px;
+	flex-basis: 30%;
+}
+
+.item-design {
+	display: flex;
+	gap: 10px;
+	padding: 16px;
+	border-bottom: 1px solid var(--color-primary-01);
+}
+
+.section-1-items {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.item-design:last-child {
+	border: none;
+}
+
+.item-cost {
+	margin-left: auto;
+}
+
+.item-description {
+	font-size: var(--font-size-s);
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.section-2-name {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.section-3-payment {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.input-design {
+	border-radius: 50px;
+	background-color: transparent;
+	border: solid 1px rgba(76, 49, 49, 0.5);
+	font-size: var(--font-size-s);
+	padding: 6px 15px;
+}
+
+.section-4-total {
+	display: flex;
+	min-width: 300px;
+	justify-content: space-between;
+	line-height: 30px;
+	background-color: var(--bg-color-01);
+	color: var(--color-primary-02);
+	padding: 20px;
+	border-radius: 10px;
+	font-size: var(--font-size-m);
+	box-shadow: var(--shadow-m);
+}
+
+.total-section-design:nth-child(1) {
+	font-weight: bold;
+}
+
+.total-price {
+	text-decoration: underline;
+}
+
+.order-btn {
+	min-width: 300px;
+	margin: 20px 0;
+	padding: 16px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: var(--bg-color-03);
+	border: 2px solid var(--color-primary-02);
+	transition: 0.3s ease-in-out;
+	font-size: var(--font-size-h4);
+	cursor: pointer;
+	box-shadow: var(--shadow-m);
+}
+
+.order-btn:hover {
+	background-color: rgba(255, 255, 255, 0.7);
+	color: var(--bg-color-03);
+	border: 2px solid var(--bg-color-03);
+}
